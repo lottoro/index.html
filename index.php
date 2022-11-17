@@ -37,7 +37,7 @@ if(isset($_POST['Valider'])) {
 	$stmt =$conn->prepare("INSERT INTO etudiante(Nom, Prenom, Numero, Niveau, Photo) VALUES (?,?,?,?,?)");
 	$exe = $stmt->execute([$Nom,$Prenom,$Numero,$Niveau,$Photo]);
 	if($exe){
-		echo '';
+		echo 'Vous etes enregistre';
 	}else{
 		echo '';
 	}
@@ -61,7 +61,7 @@ if(isset($_POST['Valider'])) {
 
 			<form  method="post"   action="" enctype="multipart/form-data" >
 		
-				<p>INSCRIPTION</p>
+				<p>INSCRIPTION POUR LA JOURNEE DE PARRAINAGE</p>
 				<label>Nom</label>
 				<input type="text" name='Nom' placeholder="Entrez votre nom" class="input" required/> <br>
 
@@ -72,8 +72,7 @@ if(isset($_POST['Valider'])) {
                 <input type="text" name='Numero' placeholder="Entrez votre Numero de téléphone" class="input" required/> <br>
                 
 				<label>Niveau</label>
-				<select name="Niveau" id="Niveau" class="input">
-					<option value="Choisiez votre niveau d'étude"> Choisissez votre niveau d'étude</option>
+				<select name="Niveau" id="Niveau" class="input>
 					<option value="Licence 1">Licence 1</option>
 					<option value="Licence 2">Licence 2</option>
 					<option value="Licence 3">Licence 3</option>
