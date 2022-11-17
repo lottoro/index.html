@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="fr">
+	<head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>INSCRIPTION</title>
+		<meta charset="utf-8">																																																																																										
+	</head>
+	
+	<body>
+		<div class="container">
+
+			<form  method="post"   action="" enctype="multipart/form-data" >
+		
+				<p>INSCRIPTION</p>
+				<label>Nom</label>
+				<input type="text" name='Nom' placeholder="Entrez votre nom" class="input" required/> <br>
+
+				<label>Prenom</label>
+				<input type="text" name='Prenom' placeholder="Entrez votre Prenom" class="input" required/> <br>
+
+				<label>Numero</label>
+                <input type="text" name='Numero' placeholder="Entrez votre Numero de téléphone" class="input" required/> <br>
+                
+				<label>Niveau</label>
+				<select name="Niveau" id="Niveau" class="input">
+					<option value="Choisiez votre niveau d'étude"> Choisissez votre niveau d'étude</option>
+					<option value="Licence 1">Licence 1</option>
+					<option value="Licence 2">Licence 2</option>
+					<option value="Licence 3">Licence 3</option>
+				</select> <br>
+
+				<label>Photo</label>
+				<input type="file" placeholder="Inserez une photo" name='Photo'  class="input" /> <br>
+
+				<input type="submit" value="Valider" name='Valider' class="submit"/>
+				
+
+			</form>
+			
+			<!--OMBRES-->
+			<div class="drop drop-1"></div>
+			<div class="drop drop-2"></div>
+			<div class="drop drop-3"></div>
+			<div class="drop drop-4"></div>
+			<div class="drop drop-5"></div>
+
+		</div> 
+		
+	</body>
+
+</html>
