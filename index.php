@@ -37,7 +37,7 @@ if(isset($_POST['Valider'])) {
 	$stmt =$conn->prepare("INSERT INTO etudiante(Nom, Prenom, Numero, Niveau, Photo) VALUES (?,?,?,?,?)");
 	$exe = $stmt->execute([$Nom,$Prenom,$Numero,$Niveau,$Photo]);
 	if($exe){
-		echo 'Vous etes enregistre';
+		echo ' Vous etes enregistre';
 	}else{
 		echo '';
 	}
@@ -59,7 +59,7 @@ if(isset($_POST['Valider'])) {
 	<body>
 		<div class="container">
 
-			<form  method="post"   action="" enctype="multipart/form-data" >
+			<form  method="POST"   action="" enctype="multipart/form-data" >
 		
 				<p>INSCRIPTION POUR LA JOURNEE DE PARRAINAGE</p>
 				<label>Nom</label>
