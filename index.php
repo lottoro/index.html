@@ -59,9 +59,9 @@ if(isset($_POST['Valider'])) {
 	<body>
 		<div class="container">
 
-	<form  method=["GET","POST"] action="index.php" enctype="multipart/form-data" >
+	<form  method=["POST"] action="index.php" enctype="multipart/form-data" >
 		
-				<p>INSCRIPTION POUR LA JOURNEE DE PARRAINAGE</p>
+				<p>INSCRIPTION</p>
 				<label>Nom</label>
 				<input type="text" name='Nom' placeholder="Entrez votre nom" class="input" required/> <br>
 
